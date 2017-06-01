@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Rock Paper Scissors</h1>
+
+<p>wins {{session['wins']}}</p>
+<p>Losses {{session['losses']}}</p>
+<p>Ties{{session['ties']}}</p>
+
+
+<p>{{result}}</p>
+
+
+<form action='/click' method='post'>
+	<input type="hidden" name="action" value="1">
+	<input type="submit" name="rock" value="Rock">
+</form>
+
+<form action='/click' method='post'>
+	<input type="hidden" name="action" value="2">
+	<input type="submit" name="paper" value="Paper">
+</form>
+
+<form action='/click' method='post'>
+	<input type="hidden" name="action" value="3">
+	<input type="submit" name="scissors" value="Scissors">
+</form>
+</body>
+</html>
